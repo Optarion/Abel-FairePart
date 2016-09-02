@@ -1,0 +1,99 @@
+main {
+	width: 800px;
+	height: 600px;
+	margin: 3em auto;
+	position: relative;
+
+	.wrapper-1col, .wrapper-2col {
+		background: white;
+		@include box-shadow("0px 0px 20px 2px #cfcfcf");
+		position: absolute;
+		top: 0;
+		height: 600px;
+		padding: 2em;
+	}
+
+	.wrapper-1col{
+		right: 0;
+		width: 50%;
+		cursor: pointer;
+	}
+
+	.wrapper-2col {
+		left:0;
+		display: none;
+		width: 100%;
+
+		> div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+	}
+
+	#page1{
+		div	{
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+	}
+
+	#page2, #page3 {
+		align-self: center;
+	}
+
+	#page2 {
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 200px;
+		font-size: 2em;
+		text-align: center;
+		padding: 0 1em;
+		width: 50%;
+
+		p {
+			font-family: $main-font;
+			font-weight: normal;
+			text-align: center;
+			margin: 0;
+		}
+
+		img {
+			width: 30%;
+			margin-top: 0.7em;
+		}
+
+		.sign {
+			font-family: $light-font;
+			
+			&:last-of-type {
+				margin: 1em;
+			}
+		}
+
+		.name {
+			font-family: $black-font;
+			text-transform: uppercase;
+			font-size: 1.5em;
+		}
+
+		.date{
+			font-size: 0.8em;
+		}
+	}
+
+	#page3 {
+		img {
+			max-height: 600px;
+			width: auto;
+		}
+	}
+
+}

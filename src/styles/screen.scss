@@ -1,8 +1,11 @@
 @import 'base/variables';
 
 @import 'base/normalize';
+@import 'base/mixins';
 @import 'base/global';
+@import 'base/fonts';
 
+@import 'components/main';
 @import 'components/footer';
 
 // Import Layouts
