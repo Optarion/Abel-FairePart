@@ -4,7 +4,12 @@ $(document).ready(function(){
 
 	$page1.click(function(){
 		$(this).fadeOut(2000);
-		$page2.fadeIn(2000);
-	})
+		$page2.fadeIn(1000);
+	});
+
+	$page2.click(function(){
+		$(this).fadeOut(2000);
+		$page1.fadeIn(1000);
+	});
 
 })
